@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Certificate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="certificate">
+            <div class="certificate-header">
+                <h1>CERTIFICATE OF ACHIEVEMENT</h1>
+                <p>This is to certify that</p>
+            </div>
+            
+            <div class="certificate-body">
+                <h2 id="cert-name"></h2>
+                
+                <div class="certificate-details">
+                    <div class="detail">
+                        <span>Score:</span>
+                        <span id="cert-score"></span>
+                    </div>
+                    <div class="detail">
+                        <span>Language:</span>
+                        <span id="cert-language"></span>
+                    </div>
+                    <div class="detail">
+                        <span>College:</span>
+                        <span id="cert-college"></span>
+                    </div>
+                    <div class="detail">
+                        <span>Department:</span>
+                        <span id="cert-dept"></span>
+                    </div>
+                    <div class="detail">
+                        <span>Date of Birth:</span>
+                        <span id="cert-dob"></span>
+                    </div>
+                    <div class="detail">
+                        <span>Date Completed:</span>
+                        <span id="cert-date"></span>
+                    </div>
+                </div>
+                
+                <div class="certificate-footer">
+                    <div class="signature">
+                        <div class="seal">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <p>Quiz Administrator</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certificate-actions">
+                <button id="print-btn" class="btn btn-primary">
+                    <i class="fas fa-print"></i> Print Certificate
+                </button>
+                <button id="retake-btn" class="btn">
+                    <i class="fas fa-redo"></i> Take Another Quiz
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

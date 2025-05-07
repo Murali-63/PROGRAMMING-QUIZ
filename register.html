@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Programming Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="register-form">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <h1>Programming Quiz</h1>
+                <p>Test your knowledge and earn a certificate!</p>
+            </div>
+            
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="name">Full Name*</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="college">College/Institution*</label>
+                    <input type="text" id="college" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="department">Department*</label>
+                    <input type="text" id="department" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dob">Date of Birth*</label>
+                    <input type="date" id="dob" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">Age*</label>
+                    <input type="number" id="age" min="12" max="60" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Select Programming Language*</label>
+                    <div class="language-options">
+                        <label class="language-option">
+                            <input type="radio" name="language" value="python" required>
+                            <div class="language-card" data-language="python">
+                                <i class="fab fa-python"></i> Python
+                            </div>
+                        </label>
+                        <label class="language-option">
+                            <input type="radio" name="language" value="c" required>
+                            <div class="language-card" data-language="c">
+                                <i class="fas fa-c"></i> C
+                            </div>
+                        </label>
+                        <label class="language-option">
+                            <input type="radio" name="language" value="cpp" required>
+                            <div class="language-card" data-language="cpp">
+                                <i class="fas fa-copyright"></i> C++
+                            </div>
+                        </label>
+                        <label class="language-option">
+                            <input type="radio" name="language" value="java" required>
+                            <div class="language-card" data-language="java">
+                                <i class="fab fa-java"></i> Java
+                            </div>
+                        </label>
+                        <label class="language-option">
+                            <input type="radio" name="language" value="javascript" required>
+                            <div class="language-card" data-language="javascript">
+                                <i class="fab fa-js"></i> JavaScript
+                            </div>
+                        </label>
+                        <label class="language-option">
+                            <input type="radio" name="language" value="html" required>
+                            <div class="language-card" data-language="html">
+                                <i class="fab fa-html5"></i> HTML
+                            </div>
+                        </label>
+                        <label class="language-option">
+                            <input type="radio" name="language" value="css" required>
+                            <div class="language-card" data-language="css">
+                                <i class="fab fa-css3"></i> CSS
+                            </div>
+                        </label>
+                        <label class="language-option">
+                            <input type="radio" name="language" value="php" required>
+                            <div class="language-card" data-language="php">
+                                <i class="fab fa-php"></i> PHP
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-footer">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-play"></i> Start Quiz
+                    </button>
+                    <p class="note">* 5 minute time limit, 10 questions, 10 points each</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
